@@ -6,6 +6,7 @@ public class HelmAksi {
         j.setMerk("NHK");
         j.setWarna("Hitam");
         j.setHarga(300);
+        // gak bisa j.setJenisHelm();
         
         j.PakaiHelm();
         
@@ -15,5 +16,15 @@ public class HelmAksi {
         System.out.println(j.getWarna());
         System.out.print("Harganya \t ");
         System.out.println(j.getHarga());
+        
+        
+        HelmBalap hb = new HelmBalap ();
+        hb.setMerk("AGV");
+        hb.setWarna("Biru");
+        hb.setHarga(50000);
+        hb.setJenisHelm("Full Face");
+        hb.PakaiHelm();
+        System.out.println("Jenis \t:"+hb.getJenisHelm());
+        hb.throttle();
     }
 }
